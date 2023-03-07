@@ -1,5 +1,4 @@
 AllCops:
-  TargetRubyVersion: 2.X
   NewCops: enable
   Exclude:
     - "Guardfile"
@@ -38,6 +37,8 @@ Layout/HashAlignment:
   EnforcedColonStyle: key
 Layout/ExtraSpacing:
   AllowForAlignment: false
+Layout/EndOfLine:
+   Enabled: False
 Layout/MultilineMethodCallIndentation:
   Enabled: true
   EnforcedStyle: indented
