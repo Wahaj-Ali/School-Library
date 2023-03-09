@@ -55,6 +55,10 @@ Clone this [repository](https://github.com/Wahaj-Ali/School-Library) to your des
   git clone https://github.com/Wahaj-Ali/School-Library.git
   cd Enumerable
 ```
+- Run `bundle install` or `bundle i` to install the dependencies
+- Run `ruby main.rb` to run the School Library App!
+- Run `irb` to run the code by pasting it in the terminal.
+- Run `rubocop` to find and fix linters
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
