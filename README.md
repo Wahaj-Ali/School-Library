@@ -18,6 +18,7 @@
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 # 📖 OPP School Library <a name="about-project"></a>
 
@@ -54,6 +55,10 @@ Clone this [repository](https://github.com/Wahaj-Ali/School-Library) to your des
   git clone https://github.com/Wahaj-Ali/School-Library.git
   cd Enumerable
 ```
+- Run `bundle install` or `bundle i` to install the dependencies
+- Run `ruby main.rb` to run the School Library App!
+- Run `irb` to run the code by pasting it in the terminal.
+- Run `rubocop` to find and fix linters
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,5 +89,13 @@ If you like this project, Give a ⭐️.
 
 - Project from [Microverse](https://www.microverse.org/?grsf=i6yi2m) RUBY, DATABASES module
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/Wahaj-Ali/School-Library/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
