@@ -129,14 +129,14 @@ class App
       puts 'Date [yyyy/mm/dd]: '
       rental_date = gets.chomp
       add_rental(rental_date, rented_book, renter)
-      print "\nRental created successfully"
+      print "\nRental created successfully. \n"
     else
       puts 'There are no books available for rent!'
     end
   end
 
-  def add_rental
-    new_rental = Rental.new(rental_date, rented_book, renter)
+  def add_rental(rental_date, rented_book, renter)
+    new_rental = Rental.new(rental_date, @books[rented_book.to_i], @persons[renter.to_i])
     @rentals << new_rental
   end
 end
