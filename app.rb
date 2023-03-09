@@ -47,4 +47,28 @@ class App
       nil
     end
   end
+
+  def create_student
+    print 'Age: '
+    student_age = gets.chomp
+    print 'Name: '
+    student_name = gets.chomp.capitalize
+    print 'Has parent permisiion? [Y/N]:'
+    student_parent_permission = gets.chomp
+    permission = case student_parent_permission.downcase
+                 when 'y'
+                   true
+                 when 'n'
+                   false
+                 end
+    print 'Classroom: '
+    student_classroom = gets.chomp
+    add_student(student_age, student_name, student_classroom, permission)
+    print "\nStudent added successfully.\n"
+  end
+
+  def add_student
+    new_student = Student.new(student_age, student_name, student_classroom, permission)
+    @persons << new_student
+  end
 end
