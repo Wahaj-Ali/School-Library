@@ -87,4 +87,18 @@ class App
     new_teacher = Teacher.new(teacher_age, teacher_specialization, teacher_name)
     @persons << new_teacher
   end
+
+  def create_book
+    print 'Title: '
+    book_title = gets.chomp
+    print 'Author: '
+    book_author = gets.chomp
+    add_book(book_title, book_author)
+    print "\nBook created successfully"
+  end
+
+  def add_book
+    new_book = Book.new(book_title, book_author)
+    @books << new_book
+  end
 end
