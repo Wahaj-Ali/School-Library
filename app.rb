@@ -12,6 +12,7 @@ class App
     @rentals = []
   end
 
+  # list methods
   def list_people
     if persons.length.positive?
       @persons.each_with_index do |person, index|
@@ -29,6 +30,21 @@ class App
       end
     else
       puts "\nNo books found"
+    end
+  end
+
+  # create methods
+  def create_person
+    print 'Do you want to create a student (1) or a teacher (2)? [Input the number]:'
+    number = gets.chomp
+    case number
+    when '1'
+      create_student
+    when '2'
+      create_teacher
+    else
+      puts '\nSelect a valid option'
+      nil
     end
   end
 end
