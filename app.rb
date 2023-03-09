@@ -119,6 +119,24 @@ class App
   end
 
   def create_rental
-    print 'Select a book from the following list by number'
-    
+    if books.length.positive?
+      print 'Select a book from the following list by number'
+      list_books
+      rented_book = gets.chomp.capitalize
+      puts 'Select a person from the following list by number (not id)'
+      list_people
+      renter = gets.chomp.capitalize
+      puts 'Date [yyyy/mm/dd]: '
+      rental_date = gets.chomp
+      add_rental(rental_date, rented_book, renter)
+      print "\nRental created successfully"
+    else
+      puts 'There are no books available for rent!'
+    end
+  end
+
+  def add_rental
+    new_rental = Rental.new(rental_date, rented_book, renter)
+    @rentals << new_rental
+  end
 end
