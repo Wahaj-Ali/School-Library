@@ -21,4 +21,14 @@ class App
       puts "\nNo persons found"
     end
   end
+
+  def list_books
+    if books.length.positive?
+      @books.each_with_index do |book, index|
+        print "\n [#{index}] [#{book}] Title: #{book.title}, Author: #{book.author}"
+      end
+    else
+      puts "\nNo books found"
+    end
+  end
 end
