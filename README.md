@@ -18,6 +18,7 @@
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 # 📖 OPP School Library <a name="about-project"></a>
 
@@ -84,5 +85,13 @@ If you like this project, Give a ⭐️.
 
 - Project from [Microverse](https://www.microverse.org/?grsf=i6yi2m) RUBY, DATABASES module
 
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](https://github.com/Wahaj-Ali/School-Library/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
