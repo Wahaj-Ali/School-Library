@@ -33,6 +33,21 @@ class App
     end
   end
 
+  def list_rentals
+    print 'ID of person'
+    person_id = gets.chomp
+    puts 'Rentals: '
+    rental_list_by_id(person_id.to_i)
+  end
+
+  def rental_list_by_id(person_id)
+    @rentals.each do |rental|
+      if rental.person.id == person_id
+        puts "\nDate: #{rental.date}, Book \"#{rental.book.title}\" by #{rental.book.author}"
+      end
+    end
+  end
+
   # create methods
   def create_person
     print 'Do you want to create a student (1) or a teacher (2)? [Input the number]:'
