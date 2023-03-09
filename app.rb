@@ -34,6 +34,7 @@ class App
   end
 
   def list_rentals
+    list_people
     print 'ID of person'
     person_id = gets.chomp
     puts 'Rentals: '
@@ -116,4 +117,8 @@ class App
     new_book = Book.new(book_title, book_author)
     @books << new_book
   end
+
+  def create_rental
+    print 'Select a book from the following list by number'
+    
 end
