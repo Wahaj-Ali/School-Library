@@ -83,7 +83,7 @@ class App
     print "\nStudent created successfully.\n"
   end
 
-  def add_student
+  def add_student(student_age, student_classroom, student_name, permission)
     new_student = Student.new(student_age, student_classroom, student_name, permission)
     @persons << new_student
   end
@@ -99,7 +99,7 @@ class App
     print "\nTeacher created successfully.\n"
   end
 
-  def add_teacher
+  def add_teacher(teacher_age, teacher_specialization, teacher_name)
     new_teacher = Teacher.new(teacher_age, teacher_specialization, teacher_name)
     @persons << new_teacher
   end
@@ -113,7 +113,7 @@ class App
     print "\nBook created successfully"
   end
 
-  def add_book
+  def add_book(book_title, book_author)
     new_book = Book.new(book_title, book_author)
     @books << new_book
   end
