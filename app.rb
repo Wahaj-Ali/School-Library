@@ -63,12 +63,28 @@ class App
                  end
     print 'Classroom: '
     student_classroom = gets.chomp
-    add_student(student_age, student_name, student_classroom, permission)
-    print "\nStudent added successfully.\n"
+    add_student(student_age, student_classroom, student_name, permission)
+    print "\nStudent created successfully.\n"
   end
 
   def add_student
-    new_student = Student.new(student_age, student_name, student_classroom, permission)
+    new_student = Student.new(student_age, student_classroom, student_name, permission)
     @persons << new_student
+  end
+
+  def create_teacher
+    print 'Age: '
+    teacher_age = gets.chomp
+    print 'Name: '
+    teacher_name = gets.chomp
+    print 'Specialization: '
+    teacher_specialization = gets.chomp
+    add_teacher(teacher_age, teacher_specialization, teacher_name)
+    print "\nTeacher created successfully.\n"
+  end
+
+  def add_teacher
+    new_teacher = Teacher.new(teacher_age, teacher_specialization, teacher_name)
+    @persons << new_teacher
   end
 end
