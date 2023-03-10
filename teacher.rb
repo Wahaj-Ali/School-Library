@@ -3,7 +3,7 @@ class Teacher < Person
   attr_reader :type
   attr_accessor :specialization
 
-  def initialize(age, specialization, name, type = 'Teacher')
+  def initialize(name, age, specialization, type = 'Teacher')
     super(age, name, parent_permission)
     @specialization = specialization
     @type = type
